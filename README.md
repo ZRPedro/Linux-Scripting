@@ -11,6 +11,7 @@ There are some basic command line utilities that are used constantly, and it wou
 # Navigate on the terminal
 To navigate to a directory from the terminal simply use cd followed by the directory for example:
 > cd /home
+
 Another option is to open the directory with the file manager, right click and select open in terminal.
 
 # Useful terminal commands
