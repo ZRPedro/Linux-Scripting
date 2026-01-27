@@ -17,7 +17,7 @@ For example, to find out where firefox is installed:
 
 `whereis firefox`
 
-# Navigation
+# Navigating the filesystem
 Commands useful for directory navigation:
 
 `pwd`: Displays the present working directory
@@ -27,3 +27,5 @@ Commands useful for directory navigation:
 `cd ..`: Change to parent directory (..)
 
 `cd -`: Change to previous working directory; - (minus)
+
+`tree -d`: To view just the directories and to suppress listing file names.
