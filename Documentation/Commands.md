@@ -1,3 +1,7 @@
+# Terminal
+
+`clear`: Clears the terminal
+
 # System
 `sudo shutdown`: Shuts down the system
 
@@ -28,4 +32,4 @@ Commands useful for directory navigation:
 
 `cd -`: Change to previous working directory; - (minus)
 
-`tree -d`: To view just the directories and to suppress listing file names.
+`tree -d`: To view just the directories and to suppress listing file names
