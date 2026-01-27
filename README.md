@@ -8,6 +8,13 @@ There are some basic command line utilities that are used constantly, and it wou
 - tail: used to show the last few lines of a file.
 - man: used to view documentation.
 
+# Absolute and Relative paths
+An absolute pathname begins with the root directory (/) and follows the tree, branch by branch, until it reaches the desired directory or file. Absolute paths always start with /.
+
+A relative pathname starts from the present working directory. Relative paths never start with /.
+
+Most of the time, it is most convenient to use relative paths, which require less typing. Usually, you take advantage of the shortcuts provided by: . (present directory), .. (parent directory) and ~ (your home directory).
+
 # Useful terminal commands
 To find out some common useful commands for Linux go to:
 [Terminal Commands](Documentation/Commands.md)
