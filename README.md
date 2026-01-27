@@ -8,6 +8,16 @@ There are some basic command line utilities that are used constantly, and it wou
 - tail: used to show the last few lines of a file.
 - man: used to view documentation.
 
+# The Command Line
+Most input lines entered at the shell prompt have three basic elements:
+- Command
+- Options
+- Arguments
+
+The command is the name of the program or script you are executing. It may be followed by one or more options (or switches) that modify what the command may do. Options usually start with one or two dashes, for example, -p or --print, in order to differentiate them from arguments, which represent what the command operates on.
+
+However, plenty of commands have no options, no arguments, or neither. In addition, other elements (such as setting environment variables) can also appear on the command line when launching a task.
+
 # Absolute and Relative paths
 An absolute pathname begins with the root directory (/) and follows the tree, branch by branch, until it reaches the desired directory or file. Absolute paths always start with /.
 
