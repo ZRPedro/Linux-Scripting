@@ -7,3 +7,7 @@ There are some basic command line utilities that are used constantly, and it wou
 - head: used to show the first few lines of a file.
 - tail: used to show the last few lines of a file.
 - man: used to view documentation.
+
+# Useful terminal commands
+To find out some common useful commands for Linux go to:
+[Terminal Commands](Documentation/Commands.md)
