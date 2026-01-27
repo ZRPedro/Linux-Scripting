@@ -8,6 +8,11 @@ There are some basic command line utilities that are used constantly, and it wou
 - tail: used to show the last few lines of a file.
 - man: used to view documentation.
 
+# Navigate on the terminal
+To navigate to a directory from the terminal simply use cd followed by the directory for example:
+> cd /home
+Another option is to open the directory with the file manager, right click and select open in terminal.
+
 # Useful terminal commands
 To find out some common useful commands for Linux go to:
 [Terminal Commands](Documentation/Commands.md)
