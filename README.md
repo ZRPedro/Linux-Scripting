@@ -25,6 +25,15 @@ A relative pathname starts from the present working directory. Relative paths ne
 
 Most of the time, it is most convenient to use relative paths, which require less typing. Usually, you take advantage of the shortcuts provided by: . (present directory), .. (parent directory) and ~ (your home directory).
 
+# Viewing Files
+
+- cat: Used for viewing files that are not very long; it does not provide any scroll-back.
+- tac: Used to look at a file backwards, starting with the last line.
+- less: Used to view larger files because it is a paging program. It pauses at each screen full of text, provides scroll-back capabilities, and lets you search and navigate within the file.
+  - NOTE: Use / to search for a pattern in the forward direction and ? for a pattern in the backward direction. An older program named more is still used, but has fewer capabilities: "less is more".
+- tail: Used to print the last 10 lines of a file by default. You can change the number of lines by doing -n 15 or just -15 if you wanted to look at the last 15 lines instead of the default.
+- head: The opposite of tail; by default, it prints the first 10 lines of a file.
+
 # Useful terminal commands
 To find out some common useful commands for Linux go to:
 [Terminal Commands](Documentation/Commands.md)
