@@ -7,6 +7,16 @@
 
 `sudo reboot`: Reboots the system
 
+## Updates
+
+`sudo apt update`: Fetches the latest version of the package list from your distro's software repository
+
+`sudo apt upgrade`: Downloads and installs the updates for each outdated package and dependency on your system
+
+`apt list --upgradable`: Shows a list of upgradable packages
+
+`sudo apt autoremove`: Removes packages no longer required
+
 # Installation
 
 To find out exactly where the diff program resides on the filesystem:
@@ -57,3 +67,9 @@ Commands useful for directory navigation:
 `ls`: List all the files in the current directory
 
 `ls -l file1.txt`: Check the existence of file1.txt in the current directory
+
+## Searching for files
+
+`updatedb`: Updates the database created by updatedb utility.
+
+`locate filename.txt`: Locates the directory of filename.txt by searching in the database created by the updatedb utility
