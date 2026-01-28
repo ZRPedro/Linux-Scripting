@@ -33,3 +33,27 @@ Commands useful for directory navigation:
 `cd -`: Change to previous working directory; - (minus)
 
 `tree -d`: To view just the directories and to suppress listing file names
+
+# Working with files
+
+## Directories
+
+`mkdir sampdir`: Creates a sample directory named sampdir under the current directory
+
+`mkdir /usr/sampdir`: Creates a sample directory called sampdir under /usr
+
+`rmdir sampdir`: Removes the sampdir directory in the current folder, the directory must be empty or it will raise an error
+
+`rm -rf sampdir`: Removes the sampdir directory in the current folder and all of its contents
+
+## Files
+
+`mv original_name.txt new_name.txt`: Renames a file in the current directory with the name original_name.txt to new_name.txt
+
+`rm filename.txt`: Removes a file in the current directory called filename.txt. -f:Forcefully remove a filerm -i:Interactively remove a file
+
+`touch file1.txt`: Creates a file called file1.txt on the current directory
+
+`ls`: List all the files in the current directory
+
+`ls -l file1.txt`: Check the existence of file1.txt in the current directory
