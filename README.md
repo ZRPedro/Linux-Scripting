@@ -34,6 +34,38 @@ Most of the time, it is most convenient to use relative paths, which require les
 - tail: Used to print the last 10 lines of a file by default. You can change the number of lines by doing -n 15 or just -15 if you wanted to look at the last 15 lines instead of the default.
 - head: The opposite of tail; by default, it prints the first 10 lines of a file.
 
+# I/O Redirection
+
+Through the command shell, we can redirect the three standard file streams so that we can get input from either a file or another command, instead of from our keyboard, and we can write output and errors to files or use them to provide input for subsequent commands.
+
+For example, if we have a program called do_something that reads from stdin and writes to stdout and stderr, we can change its input source by using the less-than sign (<) followed by the name of the file to be consumed for input data:
+
+`do_something < input-file`
+
+If you want to send the output to a file, use the greater-than sign (>) as in:
+
+`do_something > output-file`
+
+In fact, you can do both at the same time as in:
+
+`do_something < input-file > output-file`
+
+Because stderr is not the same as stdout, error messages will still be seen on the terminal windows in the above example.
+
+If you want to redirect stderr to a separate file, you use stderr’s file descriptor number (2), the greater-than sign (>), followed by the name of the file you want to receive everything the running command writes to stderr:
+
+`do_something 2> error-file`
+
+NOTE: By the same logic, do_something 1> output-file is the same as do_something > output-file.
+
+A special shorthand notation can send anything written to file descriptor 2 (stderr) to the same place as file descriptor 1 (stdout): 2>&1.
+
+`do_something > all-output-file 2>&1`
+
+bash permits an easier syntax for the above:
+
+`do_something >& all-output-file`
+
 # Useful terminal commands
 To find out some common useful commands for Linux go to:
 [Terminal Commands](Documentation/Commands.md)
