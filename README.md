@@ -78,6 +78,23 @@ The above represents what we often call a pipeline, and allows Linux to combine 
 
 Furthermore, there is no need to save output in (temporary) files between the stages in the pipeline, which saves disk space and reduces reading and writing from disk, which often constitutes the slowest bottleneck in getting something done.
 
+# Package Management Systems
+
+| OPERATION       | RPM            | DEB                    |
+|-----------------|----------------|------------------------|
+| Install package | rpm -i foo.rpm | dpkg --install foo.deb |
+| Install package, dependencies | dnf install foo |  apt install foo |
+| Remove package | rpm -e foo.rpm | dpkg --remove foo.deb |
+| Remove package, dependencies | dnf remove foo | apt autoremove foo |
+| Update package | rpm -U foo.rpm | dpkg --install foo.deb |
+| Update package, dependencies | dnf update foo | apt install foo |
+| Update entire system | dnf update | apt dist-upgrade |
+| Show all installed packages | rpm -qa or dnf list installed | dpkg --list |
+| Get information on package | rpm -qil foo | dpkg --listfiles foo |
+| Show packages named foo | dnf list "foo" | apt-cache search foo |
+| Show all available packages | dnf list | apt-cache dumpavail foo |
+| What package is file part of? | rpm -qf file | dpkg --search file |
+
 # Useful terminal commands
 To find out some common useful commands for Linux go to:
 [Terminal Commands](Documentation/Commands.md)
