@@ -68,6 +68,18 @@ Commands useful for directory navigation:
 
 `ls -l file1.txt`: Check the existence of file1.txt in the current directory
 
+### Find
+
+`find`: Recurses down the filesystem tree from any particular directory (or set of directories) and locates files that match specified conditions
+
+`find /usr -name gcc`: Searching for files and directories named gcc
+
+`find /usr -type d -name gcc`: Searching only for directories named gcc
+
+`find /usr -type f -name gcc`: Searching only for regular files named gcc
+
+`find -name "*.swp" -exec rm {} ';'`: -exec is used to run commands on the files found. This example finds and removes all files that end with .swp
+
 ## Searching for files
 
 `updatedb`: Updates the database created by updatedb utility.
