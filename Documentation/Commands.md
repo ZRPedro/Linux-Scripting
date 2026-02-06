@@ -85,3 +85,25 @@ Commands useful for directory navigation:
 `updatedb`: Updates the database created by updatedb utility.
 
 `locate filename.txt`: Locates the directory of filename.txt by searching in the database created by the updatedb utility
+
+# Manual pages
+
+## Man pages
+
+For the example of the man pages the sysctl command will be used.
+
+`man -f sysctl`: List all pages on the topic
+
+`man -k sysctl`: List all pages that discuss a specific topic (even if the specified subject is not present in the name)
+
+`man -a sysctl`: Display all pages with the given name in all chapters, one after the other
+
+`man 2 sysctl`: Displays the pages in the 2nd chapter
+
+## GNU Info
+
+`info`: Displays an index of available topics. You can browse through the topic list using the regular movement keys: arrows, Page Up, and Page Down. q to quit, h for help, and Enter to select a menu item. You can view help for a particular topic by typing info topic name.
+
+## Command help
+
+`sysctl --help`: To display a short description of the command.
