@@ -107,3 +107,15 @@ For the example of the man pages the sysctl command will be used.
 ## Command help
 
 `sysctl --help`: To display a short description of the command.
+
+# Processes
+
+`w`: The load average 
+
+`jobs -l`: Processes launched from the current terminal windos session
+
+`ps`: Provides information about currently running processes keyed by PID. Use the -u option to display information of processes for a specified username. The command ps -ef displays all the processes in the system in full detail. The command ps -eLf goes one step further and displays one line of information for every thread (remember, a process can contain multiple threads).
+
+`pstree`: Displays the processes running on the system in the form of a tree diagram showing the relationship between a process and its parent process and any other processes that it created.
+
+`top`: Static view of what the system is doing is useful, monitoring the system performance live over time is also valuable.
