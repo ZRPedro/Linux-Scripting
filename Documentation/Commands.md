@@ -119,3 +119,13 @@ For the example of the man pages the sysctl command will be used.
 `pstree`: Displays the processes running on the system in the form of a tree diagram showing the relationship between a process and its parent process and any other processes that it created.
 
 `top`: Static view of what the system is doing is useful, monitoring the system performance live over time is also valuable.
+
+# File operations
+
+`sudo mount /dev/sda5 /home`: Attach the filesystem contained in the disk partition associated with the /dev/sda5 device node into the filesystem tree at the /home mount point.
+
+`$ sudo umount /home`: To unmount the partition.
+
+`mount`: Show all presently mounted filesystems.
+
+`df`: Display information about mounted filesystems, including the filesystem type, and usage statistics about currently used and available space.
